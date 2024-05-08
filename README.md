@@ -14,3 +14,15 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+## useful command to work with iOS Simulator
+List all device
+
+    xcrun simctl list devices
+
+Start a device 
+
+    open -a Simulator --args -CurrentDeviceUDID <device_udid>
+
+exp: open -a Simulator --args -CurrentDeiceUDID C3611ABF-CC88-4FC2-B737-E17DBFC6B3C6
