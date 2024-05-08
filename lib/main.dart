@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
           body: const SingleChildScrollView(
             child: Column(
               children: [
+                ImageSection(),
                 TitleSection(
                     name: "Oeschinen Lake Campground",
                     location: "Kandersteg, Switzerland"),
@@ -118,5 +119,17 @@ class TextSection extends StatelessWidget {
     return Padding(
         padding: const EdgeInsets.all(32),
         child: Text(description, softWrap: true));
+  }
+}
+
+class ImageSection extends StatelessWidget {
+  const ImageSection({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Image.asset(
+      'images/lake.jpg',
+      fit: BoxFit.cover,
+    );
   }
 }
